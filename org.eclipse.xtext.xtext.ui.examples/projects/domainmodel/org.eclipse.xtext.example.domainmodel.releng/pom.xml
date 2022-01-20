@@ -313,6 +313,7 @@
 					<configuration>
 						<!-- THE FOLLOWING LINE MUST NOT BE BROKEN BY AUTOFORMATTING -->
 						<argLine>${tycho.testArgLine} ${platformSystemProperties} ${systemProperties} ${moduleProperties}</argLine>
+						<showEclipseLog>true</showEclipseLog>
 					</configuration>
 				</plugin>
 			</plugins>
