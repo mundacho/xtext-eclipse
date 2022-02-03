@@ -113,7 +113,7 @@ public class MarkOccurrencesTest extends AbstractEditorTest {
 		listener.verify(TIMEOUT);
 	}
 	
-	@Test public void testMarkOccurrencesCrossFile() throws Exception {
+	@RepeatedTest(times=4000) @Test public void testMarkOccurrencesCrossFile() throws Exception {
 		String model1 = "Zonk { Bar(Foo) {} Baz(Foo Bar) {} }";
 		String model2 = "Foo {}";
 		IFile modelFile1 = IResourcesSetupUtil.createFile("MarkOccurrencesTest/src/Test1.outlinetestlanguage", model1);
